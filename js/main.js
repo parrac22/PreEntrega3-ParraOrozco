@@ -19,8 +19,8 @@ const llenarDropDown = (arrayCategorias)=> {
 
 const construirTransaccion = () => {
     let id = crearId()
-    let categoria = dropDownMenu.value
-    let monto = numberInput.value
+    let categoria = dropDownMenu.value 
+    let monto = numberInput.value || 0
     const objetoTransaccion = new Transaccion(id,categoria,monto)
     return objetoTransaccion
 }
